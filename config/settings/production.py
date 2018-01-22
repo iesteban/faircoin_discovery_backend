@@ -124,7 +124,7 @@ INSTALLED_APPS += ("anymail", )
 ANYMAIL = {
     "SENDGRID_API_KEY": env('SENDGRID_API_KEY'),
 }
-EMAIL_BACKEND = "anymail.backends.mailgun.EmailBackend"
+EMAIL_BACKEND = "anymail.backends.sendgrid.EmailBackend"
 
 # TEMPLATE CONFIGURATION
 # ------------------------------------------------------------------------------
